@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Science | Contacts</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+
+
+</head>
+<body id="page5">
+
+<div class="body1"></div>
+<div class="body2">
+  <div class="main">
+    <header>
+      <div class="wrapper">
+        <nav>
+          <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="researches.html">Researches</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li id="menu_active" class="bg_none"><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+        <h1><a href="#" id="logo">science</a></h1>
+      </div>
+      <div class="wrapper">
+        <article class="col1 pad_left2">
+          <div class="text1">Discovering New Ways <span>of Scientific Thinking</span></div>
+          <p>Description <a href="#" class="link1">Read More</a> </p>
+        </article>
+      </div>
+    </header>
+  </div>
+</div>
+<div class="body3">
+  <div class="main">
+    <section id="content_top">
+      <article class="pad_left2 col3">
+        <h2>Our Contacts</h2>
+        <p class="marg_top"> <strong>Country:</strong>India<br>
+          <strong>State:</strong>Gujarat<br>
+          <strong>City:</strong>Ahmedabad<br>
+          <strong>Telephone:</strong>+91 1234567890<br>
+          <strong>Email:</strong><a href="#">xyz@gmail.com</a> </p>
+      </article>
+      <article class="pad_left1 col2">
+        <h2>Miscellaneous Info:</h2>
+        <p class="marg_top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odio ratione ipsum, incidunt, quas ea in voluptates officiis asperiores mollitia esse, laboriosam quod quisquam eius dolor atque. Id, magni numquam?</p>
+      </article>
+    </section>
+  </div>
+</div>
+<div class="main">
+  <section id="content">
+    <article class="pad_left2">
+      <h2>Contact Form</h2>
+      <form id="ContactForm" action="#" name="myform" onsubmit="return Validate()">
+          <div class="wrapper">
+            <p>Your Name:</p>
+            <input type="text" name="firstname" class="input" size="20" ><br>
+          </div>
+          <div class="wrapper">
+            <p>Your E-mail:</p>
+            <input type="text" id="pwd" name="Email" size="23" class="input" > <br><br>
+          </div>
+          <div class="wrapper">
+            <p>Your Message:</p>
+            <textarea cols="1" rows="1" name="Message"></textarea>
+        </div>
+        <input type="reset" value="Clear">
+        <input type="submit" value="Submit">
+      </form>
+    </article>
+  </section>
+</div>
+<div class="body4">
+  <div class="main">
+    <div id="footer_menu">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="researches.html">Researches</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li class="bg_none"><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footerlink">
+
+    <div style="clear:both;"></div>
+  </div>
+</footer>
+</body>
+
+
+
+<script type="text/javascript">
+  
+function Validate()
+{
+  var firstname=document.myform.firstname.value;
+  var email=document.myform.Email.value;
+  var message=document.myform.Message.value;
+
+
+  var letters = /^[A-Za-z]+$/;
+  var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+
+  if (firstname==null || firstname==""){  
+  alert("First Name can't be blank");  
+  return false;
+  }else if(!firstname.match(letters)) {
+  alert('First name can only have letters');  
+  return false;
+  }else if(!email.match(mailformat)){
+  alert('Email should be in proper format');  
+  return false;
+}else if(message==null || message=="") {
+  alert('Please enter message');  
+  return false;  
+  }  
+}
+
+</script>
+
+</html>
